@@ -1,0 +1,281 @@
+@import url("font-awesome/css/font-awesome.min.css");
+@import url("micons/micons.css");
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+
+body {
+    background: #111111;
+    font-family: "librebaskerville-regular", serif;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: #353535;
+    margin: 0;
+    padding: 0;
+  }
+
+  button, .button {
+    margin-bottom: 1.2rem;
+  }
+
+  #sekolah {
+    background-color: #111111;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    padding: 12rem 0 1rem;
+    position: relative;
+  }
+  #sekolah .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .75;
+    background-color: #000000;
+  }
+  #sekolah .section-intro h1 {
+    color: white;
+  }
+  #sekolah .section-intro h3 {
+    color: rgba(242, 242, 242, 0.5);
+  }
+  #sekolah .section-intro p.lead {
+    color: rgba(242, 242, 242, 0.4);
+  }
+  
+  .sekolah-content {
+    max-width: 1024px;
+    margin-top: 3rem;
+    color: #FFFFFF;
+    z-index: 600;
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  .sekolah-content h5 {
+    color: #FFFFFF;
+    margin-bottom: 5.4rem;
+  }
+  .sekolah-content h6 {
+    color: #555555;
+    font-size: 1.4rem;
+  }
+  
+  /* sekolah info */
+  .sekolah-info .cinfo {
+    margin-bottom: 2rem;
+  }
+  
+  /* sekolah form */
+  #sekolah form {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+  #sekolah form .form-field {
+    position: relative;
+  }
+  #sekolah form .form-field:before, #sekolah form .form-field:after {
+    content: "";
+    display: table;
+  }
+  #sekolah form .form-field:after {
+    clear: both;
+  }
+  #sekolah form .form-field label {
+    font-family: "montserrat-bold", sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 0;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    padding: .4rem 2rem .4rem 2rem;
+    margin: 0;
+    color: #000000;
+    background: #00709e;
+    border-radius: 3px;
+  }
+  #sekolah form .form-field label::after {
+    position: absolute;
+    right: 15px;
+    top: 1px;
+    margin-top: -6px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #00709e;
+    content: "";
+  }
+  #sekolah form ::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  #sekolah form :-moz-placeholder {
+    color: rgba(255, 255, 255, 0.3);
+    /* Firefox 18- */
+  }
+  #sekolah form ::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.3);
+    /* Firefox 19+ */
+  }
+  #sekolah form :-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  #sekolah form .placeholder {
+    color: rgba(255, 255, 255, 0.3) !important;
+  }
+  
+  #sekolah input[type="text"],
+  #sekolah input[type="password"],
+  #sekolah input[type="email"],
+  #sekolah input[type="number"],
+  #sekolah input[type="date"],
+  #sekolah textarea {
+    width: 100%;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 3.6rem;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  #sekolah input[type="text"]:focus,
+  #sekolah input[type="password"]:focus,
+  #sekolah input[type="email"]:focus
+  #sekolah input[type="number"]:focus
+  #sekolah input[type="date"]:focus {
+    color: #FFFFFF;
+  }
+  
+  #sekolah {
+    
+  }
+  
+  #sekolah textarea {
+    min-height: 21rem;
+    padding: 1.8rem 2rem;
+  }
+  #sekolah textarea:focus {
+    color: #FFFFFF;
+  }
+  
+  #sekolah button.submitform {
+    font-size: 1.5rem;
+    display: block;
+    letter-spacing: .2rem;
+    height: 6rem;
+    line-height: 6rem;
+    padding: 0 3rem;
+    width: 100%;
+    background: #00709e;
+    color: #000000;
+    margin-top: .6rem;
+  }
+  #sekolah button.submitform:hover, #sekolah button.submitform:focus {
+    background: #f89e0f;
+  }
+  
+  #message-warning, #message-success {
+    display: none;
+    background: #000000;
+    padding: 3rem;
+    margin-bottom: 3.6rem;
+    width: 100%;
+  }
+  
+  #message-warning {
+    color: #D32B2E;
+  }
+  
+  #message-success {
+    color: #00709e;
+  }
+  
+  #message-warning i,
+  #message-success i {
+    margin-right: 10px;
+  }
+  
+  .button:hover,
+  a.button:hover,
+  button:hover,
+  input[type="submit"]:hover,
+  input[type="reset"]:hover,
+  input[type="button"]:hover,
+  .button:focus,
+  button:focus,
+  input[type="submit"]:focus,
+  input[type="reset"]:focus,
+  input[type="button"]:focus {
+    background: #989898;
+    color: #000000;
+    outline: 0;
+  }
+
+  /* form loader */
+  #submit-loader {
+    display: none;
+    position: relative;
+    left: 0;
+    top: 1.8rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4.2rem;
+  }
+  #submit-loader .text-loader {
+    display: none;
+    font-family: "montserrat-bold", sans-serif;
+    font-size: 1.4rem;
+    color: #FFFFFF;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+  }
+  
+  .oldie #submit-loader .s-loader {
+    display: none;
+  }
+  .oldie #submit-loader .text-loader {
+    display: block;
+  }
+
+
+
+  @media only screen and (max-width: 900px) {
+    .sekolah-info {
+      width: 38%;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .sekolah-content {
+      max-width: 600px;
+      text-align: center;
+    }
+  
+    .sekolah-info {
+      width: 100%;
+      margin-top: 3.6rem;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .sekolah-content {
+      max-width: 480px;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .sekolah-info {
+      width: 100% !important;
+      float: none !important;
+      clear: both !important;
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0;
+    }
+  }
+
+  .form-control {
+      border: 0;
+      margin: 1em;
+  }

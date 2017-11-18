@@ -20,7 +20,7 @@
  *  13. portfolio
  *  14. testimonials
  *  15. clients
- *  16. contact
+ *  16. register
  *  17. footer
  *
  * =================================================================== */
@@ -96,7 +96,7 @@ a:hover, a:focus {
 h1, h2, h3, h4, h5, h6,
 .h01, .h02, .h03, .h04, .h05, .h06 {
   font-family: "montserrat-bold", sans-serif;
-  color: #151515;
+  color: #FFFFFF;
   font-style: normal;
   text-rendering: optimizeLegibility;
   margin-bottom: 2.1rem;
@@ -632,7 +632,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  color: #000000;
+  color: #444444;
 }
 
 label, legend {
@@ -2339,7 +2339,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   line-height: 1.313;
   letter-spacing: 0;
   text-transform: none;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
   margin-top: .3rem;
 }
 
@@ -2504,10 +2504,10 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 
 
 /* ===================================================================
- *  16. contact - (_layout.scss)
+ *  16. register - (_layout.scss)
  *
  * ------------------------------------------------------------------- */
-#contact {
+#register {
   background-color: #111111;
   /* background-image: url(../images/contact-bg.jpg); */
   background-repeat: no-repeat;
@@ -2518,7 +2518,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   padding: 12rem 0 1rem;
   position: relative;
 }
-#contact .overlay {
+#register .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -2527,17 +2527,17 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   opacity: .75;
   background-color: #000000;
 }
-#contact .section-intro h1 {
+#register .section-intro h1 {
   color: white;
 }
-#contact .section-intro h3 {
+#register .section-intro h3 {
   color: rgba(242, 242, 242, 0.5);
 }
-#contact .section-intro p.lead {
+#register .section-intro p.lead {
   color: rgba(242, 242, 242, 0.4);
 }
 
-.contact-content {
+.register-content {
   max-width: 1024px;
   margin-top: 3rem;
   color: #FFFFFF;
@@ -2545,36 +2545,36 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   position: relative;
   margin-bottom: 1rem;
 }
-.contact-content h5 {
+.register-content h5 {
   color: #FFFFFF;
   margin-bottom: 5.4rem;
 }
-.contact-content h6 {
+.register-content h6 {
   color: #555555;
   font-size: 1.4rem;
 }
 
-/* contact info */
-.contact-info .cinfo {
+/* register info */
+.register-info .cinfo {
   margin-bottom: 2rem;
 }
 
-/* contact form */
-#contact form {
+/* register form */
+#register form {
   margin-top: 0;
   margin-bottom: 2rem;
 }
-#contact form .form-field {
+#register form .form-field {
   position: relative;
 }
-#contact form .form-field:before, #contact form .form-field:after {
+#register form .form-field:before, #register form .form-field:after {
   content: "";
   display: table;
 }
-#contact form .form-field:after {
+#register form .form-field:after {
   clear: both;
 }
-#contact form .form-field label {
+#register form .form-field label {
   font-family: "montserrat-bold", sans-serif;
   font-size: 1rem;
   line-height: 1.4;
@@ -2589,7 +2589,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   background: #00709e;
   border-radius: 3px;
 }
-#contact form .form-field label::after {
+#register form .form-field label::after {
   position: absolute;
   right: 15px;
   top: 1px;
@@ -2599,49 +2599,57 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   border-bottom: 5px solid #00709e;
   content: "";
 }
-#contact form ::-webkit-input-placeholder {
+#register form ::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
-#contact form :-moz-placeholder {
+#register form :-moz-placeholder {
   color: rgba(255, 255, 255, 0.3);
   /* Firefox 18- */
 }
-#contact form ::-moz-placeholder {
+#register form ::-moz-placeholder {
   color: rgba(255, 255, 255, 0.3);
   /* Firefox 19+ */
 }
-#contact form :-ms-input-placeholder {
+#register form :-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
-#contact form .placeholder {
+#register form .placeholder {
   color: rgba(255, 255, 255, 0.3) !important;
 }
 
-#contact input[type="text"],
-#contact input[type="password"],
-#contact input[type="email"],
-#contact textarea {
+#register input[type="text"],
+#register input[type="password"],
+#register input[type="email"],
+#register input[type="number"],
+#register input[type="date"],
+#register textarea {
   width: 100%;
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 3.6rem;
   background: rgba(255, 255, 255, 0.1);
 }
 
-#contact input[type="text"]:focus,
-#contact input[type="password"]:focus,
-#contact input[type="email"]:focus {
+#register input[type="text"]:focus,
+#register input[type="password"]:focus,
+#register input[type="email"]:focus
+#register input[type="number"]:focus
+#register input[type="date"]:focus {
   color: #FFFFFF;
 }
 
-#contact textarea {
+#register {
+  
+}
+
+#register textarea {
   min-height: 21rem;
   padding: 1.8rem 2rem;
 }
-#contact textarea:focus {
+#register textarea:focus {
   color: #FFFFFF;
 }
 
-#contact button.submitform {
+#register button.submitform {
   font-size: 1.5rem;
   display: block;
   letter-spacing: .2rem;
@@ -2653,7 +2661,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   color: #000000;
   margin-top: .6rem;
 }
-#contact button.submitform:hover, #contact button.submitform:focus {
+#register button.submitform:hover, #register button.submitform:focus {
   background: #f89e0f;
 }
 
@@ -2763,31 +2771,31 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 /* ------------------------------------------------------------------- 
  * responsive:
- * contact 
+ * register 
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 900px) {
-  .contact-info {
+  .register-info {
     width: 38%;
   }
 }
 @media only screen and (max-width: 768px) {
-  .contact-content {
+  .register-content {
     max-width: 600px;
     text-align: center;
   }
 
-  .contact-info {
+  .register-info {
     width: 100%;
     margin-top: 3.6rem;
   }
 }
 @media only screen and (max-width: 600px) {
-  .contact-content {
+  .register-content {
     max-width: 480px;
   }
 }
 @media only screen and (max-width: 400px) {
-  .contact-info {
+  .register-info {
     width: 100% !important;
     float: none !important;
     clear: both !important;
